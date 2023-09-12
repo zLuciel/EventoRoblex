@@ -1,0 +1,318 @@
+
+@font-face {
+  font-family: 'Montserrat Black';
+  src: url('../assets/fonts/Montserrat/Montserrat-ExtraBold.otf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Montserrat Medium';
+  src: url('../assets/fonts/Montserrat/MontserratAlternates-Bold.otf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Raleway Regular';
+  src: url('../assets/fonts/Raleway/Raleway-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Raleway Medium';
+  src: url('../assets/fonts/Raleway/Raleway-Medium.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Raleway SemiBold';
+  src: url('../assets/fonts/Raleway/Raleway-SemiBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+:root {
+  --color-primary: #00968b;
+  --bg-body: #f4f4f4;
+  --font-title: "Montserrat Black";
+  --font-title-rem: 1.7rem;
+  --font-parrafo: "Raleway SemiBold";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.font-form{
+  font-family: "Montserrat Medium";
+}
+
+body {
+  min-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: var(--bg-body) !important;
+}
+.bg-roblex{
+  background: var(--color-primary);
+}
+.text-greenRoblex{
+  color: var(--color-primary);
+}
+.text-greenRob{
+  color: var(--color-primary);
+}
+.text-white-5{
+  color: #e9e5e5;
+}
+.font-raleway-medium{
+  font-size: 0.75rem;
+  font-family: Raleway Medium;
+}
+p,ul {
+  font-family: var(--font-parrafo);
+  font-size: 0.8rem;
+}
+.sub-p{
+  font-size: .9rem;
+}
+.text-blue-5{
+  color: #52658e;
+}
+h1,
+h2 {
+  font-family: var(--font-title);
+  font-size: var(--font-title-rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+.fs-9{
+  font-size: 0.9rem;
+}
+.fs-8{
+  font-size: 0.8rem;
+}
+li{
+  list-style: none;
+}
+
+.start-55{
+  left: 65px;
+}
+.svg-img-w{
+  width: 150px;
+  height: auto;
+  aspect-ratio: 9/6;
+}
+.py-15{
+  padding: 80px 0;
+}
+
+.column-one > a > img {
+  width: 250px;
+  height: auto;
+}
+
+
+.bg-image-main {
+  color: white;
+  /*height: 80vh;*/
+  padding: 60px 0;
+  min-height: 50vh;
+  background: linear-gradient(
+      96deg,
+      rgba(0, 0, 0, 0.65) 24.15%,
+      rgba(0, 0, 0, 0) 91.39%
+    ),
+    url(/assets/bgmain.webp) center center/cover no-repeat fixed;
+}
+.bg-white-2{
+  background: #e9e9e9;
+  background: white;
+}
+/** styled boton form*/
+.form-participacion{
+  min-width: 350px;
+ /* max-width: 400px;*/
+}
+.form-participacion > button {
+  font-family: var(--font-title);
+  font-size: 18px;
+  background: linear-gradient(to bottom, #4dc7d9 0%, var(--color-primary) 100%);
+  color: white;
+  padding: 0.8em 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.form-participacion > button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.form-participacion > button:active {
+  transform: scale(0.95);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-participacion > button span {
+  display: block;
+  margin-left: 0.4em;
+  transition: all 0.3s;
+}
+
+.form-participacion > button svg {
+  width: 18px;
+  height: 18px;
+  fill: white;
+  transition: all 0.3s;
+}
+
+.form-participacion > button .svg-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-right: 0.5em;
+  transition: all 0.3s;
+}
+
+.form-participacion > button:hover .svg-wrapper {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.form-participacion > button:hover svg {
+  transform: rotate(45deg);
+}
+
+/**section sobre el viaje*/
+.bg-image-recuerda{
+  background: url(/assets/siembra.jpg) center center/cover no-repeat;
+}
+/**Slider testimonios*/
+.swiper {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.swiper-slide > span {
+  position: relative;
+  display: inline-block;
+  transition: all 0.5s ease-in-out;
+}
+.swiper-slide > span > img {
+  transition: all 0.5s ease-in-out;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.animate-slider {
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 8px;
+  height: 90%;
+  margin: 10px auto;
+  background: var(--color-primary);
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-10px);
+}
+.span-swiper > span:nth-child(1) {
+  margin-right: 10px;
+  border: 2px solid white;
+}
+.span-swiper > span:nth-child(2) {
+  height: 80%;
+  width: 10px;
+  margin: 20px auto;
+  border: 2px solid white;
+}
+iframe{
+  aspect-ratio: 9/4;
+  width: 100%;
+  height: auto;
+}
+.video-main{
+  width: 100%;
+  height: 100%;
+  aspect-ratio: none;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  width: 40px !important;
+  height: 40px !important;
+  background: var(--color-primary);
+  border-radius: 100px;
+  box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: white;
+  font-weight: 700;
+  font-size: 1.3rem !important;
+}
+
+/**errores*/
+.correoError,.telefonoError,.apellidoError,.depError,.nombrError {
+  display: none;
+  font-size: .7rem;
+}
+
+/**animate whatsapp*/
+.animate-whatsapp {
+  right: 18px;
+}
+.animate-whatsapp  img{
+  animation: animeWhatsapp 10.5s infinite;
+}
+
+@keyframes animeWhatsapp {
+  0% {
+    transform: scale(0.75);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.75);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(0.75);
+  }
+}
+/**check form*/
+
+.form-check-input:checked {
+  background-color: var(--color-primary) !important;
+  border-color: #ffffff !important;
+}
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(0, 150, 140, 0.25) !important;
+}
+
+
+
